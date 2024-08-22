@@ -24,12 +24,15 @@ h1 {
 
 nav {
     margin: 20px 0;
+    background-color: #007bff; /* Cor de fundo da barra de navegação */
+    border-radius: 0 0 10px 10px; /* Arredonda apenas as bordas inferiores */
+    padding: 10px;
 }
 
 .tab-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
     padding: 10px 20px;
     margin: 0 5px;
     border-radius: 5px;
@@ -38,21 +41,6 @@ nav {
 }
 
 .tab-button:hover {
-    background-color: #0056b3;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px 0;
-    background-color: #fafafa;
-    width: 100%;
-    max-width: 800px; /* Limita a largura máxima */
+    background-color: #007bff;
+    color: #fff;
 }
