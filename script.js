@@ -1,16 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const javaBox = document.getElementById('java-animation');
+    const contentBox = document.querySelector('.main-box');
 
-    // Adiciona um efeito de animação quando a seção é exibida
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                javaBox.style.transform = 'scale(1.2)';
-            } else {
-                javaBox.style.transform = 'scale(1)';
-            }
-        });
-    });
+    // Função para animação de pulsação
+    const pulseAnimation = () => {
+        contentBox.classList.add('pulse');
+        setTimeout(() => {
+            contentBox.classList.remove('pulse');
+        }, 2000); // A animação dura 2 segundos
+    };
 
-    observer.observe(javaBox);
+    // Chama a animação ao carregar a página
+    pulseAnimation();
 });
