@@ -44,3 +44,20 @@ nav {
     background-color: #007bff;
     color: #fff;
 }
+/* Adiciona estilo para o botão ativo */
+.tab-button.active {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Estiliza a transição suave das seções */
+.section {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #fafafa;
+    width: 100%;
+    max-width: 800px; /* Limita a largura máxima */
+    transition: opacity 0.3s ease-in-out; /* Transição suave */
+}
