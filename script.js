@@ -1,14 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const contentBox = document.querySelector('.main-box');
+function showTab(tabId) {
+    // Esconder todas as abas
+    const tabs = document.querySelectorAll('.tab-content');
+    tabs.forEach(tab => {
+        tab.style.display = 'none';
+    });
 
-    // Função para animação de pulsação
-    const pulseAnimation = () => {
-        contentBox.classList.add('pulse');
-        setTimeout(() => {
-            contentBox.classList.remove('pulse');
-        }, 2000); // A animação dura 2 segundos
-    };
-
-    // Chama a animação ao carregar a página
-    pulseAnimation();
-});
+    // Mostrar a aba selecionada
+    const selectedTab = document.getElementById(tabId);
+    selectedTab.style.display = 'block';
+}
