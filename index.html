@@ -3,43 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Meu Site de Apresentação</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div class="container">
         <nav>
-            <ul>
-                <li><a href="#content">Conteúdo</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
+            <button class="tab-button" onclick="showTab('intro')">Introdução</button>
+            <button class="tab-button" onclick="showTab('about')">Sobre Mim</button>
+            <button class="tab-button" onclick="showTab('contact')">Contato</button>
         </nav>
-        <h1>Bem-vindo ao Meu Portfólio</h1>
-    </header>
-
-    <section id="content" class="main-box">
-        <div class="content-box">
-            <section id="intro">
-                <h2>Introdução</h2>
-                <p>Olá! Sou [Seu Nome]. Este é meu site onde você pode conhecer mais sobre mim e meu trabalho.</p>
-            </section>
-
-            <section id="about">
-                <h2>Sobre Mim</h2>
-                <p>Sou um desenvolvedor apaixonado por programação e tecnologia. Tenho experiência em várias linguagens, mas meu foco é Java.</p>
-            </section>
+        <div id="intro" class="tab-content">
+            <h2>Introdução</h2>
+            <p>Bem-vindo ao meu site! Aqui você encontrará informações sobre mim e como entrar em contato.</p>
         </div>
-    </section>
-
-    <section id="contact" class="content-box">
-        <h2>Contato</h2>
-        <p>Se você deseja entrar em contato, envie um e-mail para <a href="mailto:meuemail@example.com">meuemail@example.com</a>.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
-    </footer>
-
+        <div id="about" class="tab-content" style="display: none;">
+            <h2>Sobre Mim</h2>
+            <p>Meu nome é [Seu Nome] e eu sou [Sua Profissão]. Tenho experiência em [Áreas de Interesse] e gosto de [Hobbies].</p>
+        </div>
+        <div id="contact" class="tab-content" style="display: none;">
+            <h2>Contato</h2>
+            <p>Você pode me contatar através do e-mail: [seu-email@example.com]</p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
