@@ -1,11 +1,13 @@
-function showTab(tabId) {
-    // Esconder todas as abas
-    const tabs = document.querySelectorAll('.tab-content');
-    tabs.forEach(tab => {
-        tab.style.display = 'none';
+function showSection(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        section.style.display = 'none';
     });
 
-    // Mostrar a aba selecionada
-    const selectedTab = document.getElementById(tabId);
-    selectedTab.style.display = 'block';
+    // Show the selected section
+    const sectionToShow = document.getElementById(sectionId);
+    if (sectionToShow) {
+        sectionToShow.style.display = 'block';
+    }
 }
